@@ -1,0 +1,26 @@
+[
+  {
+    "file": "index.html",
+    "copied": true,
+    "chatOpenedAfterCopy": true,
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "deniedShowsText": true,
+    "deniedShowsChat": true,
+    "staysOnSite": true
+  },
+  {
+    "file": "single-file.html",
+    "copied": true,
+    "chatOpenedAfterCopy": true,
+    "errors": []
+  },
+  {
+    "file": "single-file.html",
+    "deniedShowsText": true,
+    "deniedShowsChat": true,
+    "staysOnSite": true
+  }
+]

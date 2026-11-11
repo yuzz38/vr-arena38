@@ -1,0 +1,4280 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>VR ARENA ONLINE — VR-игры и день рождения в Иркутске</title>
+    <meta
+      name="description"
+      content="VR-арена в Иркутске на Тимирязева, 32: командные игры для детей6+ и взрослых,10 VR-квестов, дни рождения и отдых для компании. Арена120м², лаунж, аренда от5000₽/час."
+    />
+    <meta name="theme-color" content="#ff5400" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="VR ARENA ONLINE — ваша компания. Другая реальность."
+    />
+    <meta
+      property="og:description"
+      content="Игры, квесты и дни рождения в Иркутске. Тимирязева, 32. +7 924 532 55 63"
+    />
+    <meta property="og:image" content="assets/share.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/logo.webp" />
+    <style>
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(assets/font0.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(assets/font1.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(assets/font2.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Unbounded";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(assets/font3.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Unbounded";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(assets/font4.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: "Unbounded";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(assets/font5.ttf) format("truetype");
+      }
+    </style>
+    <style>
+      :root {
+        --bg: #151515;
+        --surface: #242424;
+        --orange: #ff5400;
+        --ink: #fff8f2;
+        --cream: #fff4ec;
+        --muted: #c8c0ba;
+        --line: #45413d;
+        --radius: 22px;
+        --display: Unbounded, sans-serif;
+        --body: Manrope, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 16px/1.7 var(--body);
+        overflow-wrap: break-word;
+      }
+      body.locked {
+        overflow: hidden;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+      button,
+      a,
+      summary {
+        touch-action: manipulation;
+      }
+      button,
+      summary {
+        cursor: pointer;
+      }
+      button {
+        color: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.035em;
+      }
+      h1 {
+        font-size: clamp(36px, 5.4vw, 80px);
+      }
+      h2 {
+        font-size: clamp(29px, 3.5vw, 50px);
+        margin-bottom: 40px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+      em {
+        font-style: normal;
+        color: var(--orange);
+      }
+      p + p {
+        margin-top: 18px;
+      }
+      .wrap {
+        width: 90%;
+        max-width: 1300px;
+        margin: auto;
+      }
+      section {
+        padding: 85px 0;
+      }
+      .photo {
+        overflow: hidden;
+        border-radius: 30px;
+      }
+      .photo img {
+        transition: transform 0.45s;
+      }
+      .photo:hover img {
+        transform: scale(1.025);
+      }
+      .cream {
+        background: var(--cream);
+        color: var(--bg);
+      }
+      .cream em {
+        color: #ad3700;
+      }
+      .lead {
+        font-size: clamp(22px, 2.2vw, 31px);
+        line-height: 1.45;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        min-height: 50px;
+        padding: 15px 22px;
+        border: 1px solid var(--orange);
+        border-radius: 14px;
+        background: var(--orange);
+        color: #151515;
+        font-size: 14px;
+        font-weight: 800;
+        transition:
+          background 0.18s,
+          transform 0.18s;
+      }
+      .btn svg {
+        width: 22px;
+        height: 22px;
+        flex: none;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+      }
+      .btn:hover {
+        background: #ff7534;
+        transform: translateY(-2px);
+      }
+      .btn:active {
+        transform: translateY(1px);
+      }
+      .btn.outline {
+        background: transparent;
+        color: inherit;
+        border-color: currentColor;
+      }
+      .btn.outline:hover {
+        background: #ffffff12;
+      }
+      .secondary-link {
+        display: inline-flex;
+        gap: 16px;
+        align-items: center;
+        min-height: 44px;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .secondary-link:hover {
+        color: var(--orange);
+      }
+      header {
+        position: fixed;
+        inset: 0 0 auto;
+        height: 88px;
+        z-index: 40;
+        background: #151515f7;
+        border-bottom: 1px solid #ffffff1f;
+      }
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        width: 90%;
+        max-width: 1400px;
+        margin: auto;
+        height: 100%;
+      }
+      .brand {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex: none;
+      }
+      .brand img {
+        width: 62px;
+        height: 62px;
+        border-radius: 12px;
+        object-fit: contain;
+      }
+      .brand > span {
+        font: 400 12px/1.5 var(--display);
+        letter-spacing: 0.015em;
+      }
+      .brand b {
+        color: var(--orange);
+        font-weight: 500;
+      }
+      nav {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+      }
+      nav > a {
+        font-size: 13px;
+        font-weight: 600;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+      nav > a:hover {
+        color: var(--orange);
+      }
+      .header-phone {
+        font-size: 14px;
+        font-weight: 800;
+        white-space: nowrap;
+        padding: 12px 0;
+      }
+      .burger {
+        display: none;
+      }
+      .hero {
+        min-height: 850px;
+        height: 100svh;
+        max-height: 1080px;
+        padding: 145px 0 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-image {
+        position: absolute;
+        inset: 0;
+      }
+      .hero-image img {
+        object-position: center 46%;
+      }
+      .hero-image:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, #111e, #1116 65%, #1112),
+          linear-gradient(0deg, #111e, transparent 70%);
+      }
+      .hero-content {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .hero h1 {
+        position: relative;
+        z-index: 1;
+        max-width: 1100px;
+      }
+      .hero h1 em {
+        white-space: nowrap;
+      }
+      .hero-intro {
+        margin-top: 32px;
+        max-width: 650px;
+      }
+      .hero-intro p {
+        font-size: 18px;
+        color: #f3e5dc;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        margin-top: 25px;
+      }
+      .hero-sticker {
+        position: absolute;
+        right: 0;
+        bottom: 130px;
+        width: 185px;
+        height: 185px;
+        border-radius: 50%;
+        background: var(--orange);
+        color: #151515;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: rotate(8deg);
+      }
+      .hero-sticker strong {
+        font: 500 55px var(--display);
+      }
+      .hero-sticker span {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+      .hero-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: auto;
+        padding: 25px 0;
+        border-top: 1px solid #ffffff50;
+        font-size: 13px;
+      }
+      .hero-bottom b {
+        font-family: var(--display);
+        font-size: 22px;
+        font-weight: 400;
+        margin-right: 9px;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 5fr 5fr 2fr;
+        gap: 30px;
+        align-items: center;
+      }
+      .about-main {
+        height: 400px;
+      }
+      .about-copy .lead {
+        margin-bottom: 23px;
+      }
+      .about-copy > p:not(.lead) {
+        font-size: 15px;
+        color: var(--muted);
+      }
+      .about-small {
+        height: 220px;
+        align-self: end;
+      }
+      .about-details {
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid var(--line);
+        margin-top: 25px;
+        padding-top: 20px;
+        font-size: 14px;
+      }
+      .about-details b {
+        color: var(--orange);
+      }
+      .catalog {
+        background: #202020;
+      }
+      .catalog-top {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .catalog-top > p {
+        max-width: 650px;
+        color: var(--muted);
+      }
+      .catalog-count {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .catalog-count strong {
+        font: 400 50px var(--display);
+        color: var(--orange);
+      }
+      .catalog-count span {
+        font-size: 12px;
+      }
+      .filters {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .filter {
+        border: 1px solid #67605b;
+        background: transparent;
+        border-radius: 12px;
+        padding: 12px 20px;
+        min-height: 46px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .filter.active {
+        background: var(--orange);
+        border-color: var(--orange);
+        color: #151515;
+      }
+      .filter:hover {
+        border-color: var(--orange);
+      }
+      .catalog-result {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      .game-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+      .game-card {
+        background: #151515;
+        border: 1px solid #ffffff1b;
+        border-radius: var(--radius);
+        text-align: left;
+        padding: 0;
+        overflow: hidden;
+        min-width: 0;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+      .game-card:hover {
+        border-color: var(--orange);
+        transform: translateY(-3px);
+      }
+      .game-image {
+        display: block;
+        height: 260px;
+        overflow: hidden;
+      }
+      .game-image img {
+        transition: transform 0.45s;
+      }
+      .game-card:hover img {
+        transform: scale(1.035);
+      }
+      .game-card.quest .game-image {
+        height: 180px;
+      }
+      .game-card-bottom {
+        display: block;
+        padding: 22px;
+      }
+      .game-genre {
+        display: block;
+        font-size: 11px;
+        color: #d6c4b8;
+        margin-bottom: 10px;
+      }
+      .game-card strong {
+        display: block;
+        font: 400 20px/1.4 var(--display);
+        letter-spacing: -0.025em;
+        min-height: 56px;
+      }
+      .game-open {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: var(--orange);
+        margin-top: 16px;
+      }
+      .game-open > span {
+        font-size: 26px;
+        line-height: 1;
+      }
+      .quest-banner {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 45px;
+        align-items: center;
+        margin-top: 45px;
+        border-top: 1px solid var(--line);
+        padding-top: 40px;
+      }
+      .quest-banner > div:first-child {
+        height: 290px;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+      .quest-banner h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .quest-banner p {
+        font-size: 15px;
+        color: var(--muted);
+        margin-bottom: 23px;
+      }
+      .birthday-grid {
+        display: grid;
+        grid-template-columns: 5fr 4fr 3fr;
+        gap: 28px;
+        align-items: start;
+        position: relative;
+      }
+      .birthday-copy .lead {
+        margin-bottom: 23px;
+      }
+      .birthday-copy p {
+        font-size: 15px;
+      }
+      .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+      }
+      .feature-list li {
+        border-top: 1px solid #d7bfb0;
+        padding: 12px 0;
+        font-size: 14px;
+      }
+      .feature-list li:before {
+        content: "+";
+        color: #b13b00;
+        font-weight: 800;
+        margin-right: 12px;
+      }
+      .birthday-main {
+        height: 470px;
+      }
+      .birthday-fun {
+        height: 260px;
+        align-self: end;
+        margin-bottom: 65px;
+      }
+      .birthday-note {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 260px;
+        font: 400 18px/1.5 var(--display);
+        color: #ad3700;
+      }
+      .lounge-grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .lounge-large {
+        grid-column: 1/8;
+        height: 440px;
+      }
+      .lounge-copy {
+        grid-column: 8/13;
+        align-self: center;
+      }
+      .lounge-copy h3 {
+        margin-bottom: 24px;
+      }
+      .lounge-copy p {
+        font-size: 15px;
+        color: var(--muted);
+      }
+      .lounge-retro {
+        grid-column: 1/5;
+        height: 280px;
+      }
+      .lounge-table {
+        grid-column: 5/9;
+        height: 280px;
+      }
+      .lounge-room {
+        grid-column: 9/13;
+        height: 280px;
+      }
+      .price-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+        margin-bottom: 30px;
+      }
+      .price-head > p {
+        max-width: 560px;
+        font-size: 15px;
+      }
+      .time-toggle {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .time-toggle button {
+        padding: 12px 16px;
+        min-height: 46px;
+        border: 1px solid #b8a194;
+        border-radius: 12px;
+        background: transparent;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .time-toggle button.active {
+        background: #151515;
+        color: var(--cream);
+        border-color: #151515;
+      }
+      .price-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .price-card {
+        padding: 25px 22px;
+        border: 1px solid #d6baaa;
+        border-radius: 22px;
+        display: flex;
+        flex-direction: column;
+        background: #fffaf7;
+      }
+      .price-card h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      .price-card > p {
+        font-size: 13px;
+      }
+      .price-card > strong {
+        font: 400 30px var(--display);
+        margin: 23px 0 12px;
+        white-space: nowrap;
+      }
+      .price-card > span {
+        font-size: 12px;
+      }
+      .price-card ul {
+        padding-left: 18px;
+        font-size: 12px;
+        line-height: 1.8;
+        margin: 25px 0;
+      }
+      .price-card .btn {
+        margin-top: auto;
+        padding: 12px 15px;
+        font-size: 12px;
+        gap: 10px;
+      }
+      .price-card small {
+        font-size: 11px;
+        margin-top: 16px;
+      }
+      .price-card.featured {
+        background: #151515;
+        color: var(--cream);
+        border-color: #151515;
+      }
+      .price-card.featured strong {
+        color: var(--orange);
+      }
+      .extras {
+        margin-top: 28px;
+        border: 1px solid #d6baaa;
+        border-radius: 20px;
+        padding: 15px 25px;
+      }
+      .extras summary {
+        font: 500 18px var(--body);
+        padding: 8px 0;
+      }
+      .extras-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 35px;
+      }
+      .extras-list > div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #d6baaa;
+        padding: 16px 0;
+        font-size: 14px;
+      }
+      .extras-list b {
+        white-space: nowrap;
+      }
+      .extras p {
+        font-size: 12px;
+        margin: 15px 0;
+      }
+      .price-sources {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+      .price-sources a {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        min-height: 30px;
+      }
+      .planner {
+        background: var(--orange);
+        color: #151515;
+      }
+      .planner em {
+        color: #fff4ec;
+      }
+      .planner-grid {
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        gap: 6%;
+        align-items: start;
+      }
+      .planner-intro {
+        font-size: 16px;
+        margin-bottom: 30px;
+        max-width: 600px;
+      }
+      fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0 0 28px;
+        min-width: 0;
+      }
+      legend {
+        font: 500 17px var(--display);
+        margin-bottom: 15px;
+      }
+      label {
+        cursor: pointer;
+      }
+      .choice-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .choice-grid.time {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .choice input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+      }
+      .choice > span {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        border: 1px solid #943300;
+        background: #ff8e57;
+        border-radius: 16px;
+        padding: 18px 35px 18px 18px;
+        min-height: 88px;
+        transition: background 0.18s;
+      }
+      .choice b {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .choice small {
+        font-size: 11px;
+        margin-top: 7px;
+      }
+      .choice i {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        border: 1px solid currentColor;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      .choice input:checked + span {
+        background: #151515;
+        color: var(--cream);
+        border-color: #151515;
+      }
+      .choice input:checked + span i {
+        background: var(--orange);
+        border: 3px solid var(--orange);
+      }
+      .choice input:focus-visible + span {
+        outline: 3px solid #fff;
+        outline-offset: 4px;
+      }
+      .choice input:disabled + span {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .choice:hover > span {
+        border-color: #151515;
+      }
+      .form-note {
+        font-size: 12px;
+        margin: -13px 0 23px;
+      }
+      .sliders {
+        padding: 20px;
+        border: 1px solid #943300;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        background: #ff7430;
+      }
+      .sliders > div + div {
+        margin-top: 20px;
+      }
+      .sliders label {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: default;
+      }
+      .sliders output {
+        font-weight: 400;
+      }
+      .sliders input {
+        accent-color: #151515;
+        width: 100%;
+        height: 44px;
+        cursor: pointer;
+      }
+      .addon {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 0;
+        border-top: 1px solid #943300;
+        font-size: 13px;
+      }
+      .addon input {
+        width: 20px;
+        height: 20px;
+        accent-color: #151515;
+        flex: none;
+      }
+      .addon b {
+        margin-left: auto;
+        white-space: nowrap;
+      }
+      .planner small {
+        display: block;
+        font-size: 11px;
+      }
+      .booking-ticket {
+        position: sticky;
+        top: 110px;
+        background: #151515;
+        color: var(--cream);
+        padding: 30px;
+        border-radius: 25px;
+      }
+      .ticket-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #6e5b50;
+        font-size: 12px;
+        color: var(--orange);
+      }
+      .ticket-top svg {
+        width: 28px;
+        height: 28px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.5;
+      }
+      .booking-ticket h3 {
+        font-size: 26px;
+        margin: 24px 0;
+      }
+      .booking-ticket > p {
+        font-size: 14px;
+        color: #dccbc0;
+      }
+      .ticket-total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        border-top: 1px dashed #6e5b50;
+        padding-top: 25px;
+        margin: 25px 0 7px;
+        font-size: 12px;
+      }
+      .ticket-total strong {
+        font: 400 32px var(--display);
+        white-space: nowrap;
+        color: var(--orange);
+      }
+      .booking-ticket .per-person {
+        font-size: 12px;
+        text-align: right;
+      }
+      .booking-ticket .deposit {
+        font-size: 12px;
+        border-top: 1px dashed #6e5b50;
+        margin: 20px 0;
+        padding-top: 20px;
+      }
+      .booking-ticket .btn {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 13px;
+      }
+      .booking-ticket small {
+        font-size: 11px;
+        color: #c4b0a3;
+        margin-top: 10px;
+      }
+      #copy-state {
+        font-size: 12px;
+        color: #ffb189;
+        margin: 10px 0;
+      }
+      #copy-fallback {
+        width: 100%;
+        background: #fff4ec;
+        color: #151515;
+        min-height: 150px;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 13px;
+      }
+      .film-layout {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 8%;
+        align-items: center;
+      }
+      .video-frame {
+        position: relative;
+        height: 590px;
+        max-width: 440px;
+        width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
+        background: #242424;
+      }
+      .video-frame video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .play-video {
+        position: absolute;
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%);
+        width: 85px;
+        height: 85px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #fff9;
+        border-radius: 50%;
+        background: #ff5400e8;
+        color: #151515;
+      }
+      .play-video svg {
+        width: 30px;
+        height: 30px;
+        fill: currentColor;
+      }
+      .video-frame.playing .play-video {
+        display: none;
+      }
+      .video-controls {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        align-items: center;
+        gap: 8px;
+        background: #151515e8;
+        padding: 12px;
+      }
+      .video-frame.started .video-controls {
+        display: flex;
+      }
+      .video-controls button {
+        min-width: 44px;
+        height: 44px;
+        background: #242424;
+        color: white;
+        border: 1px solid #777;
+        border-radius: 10px;
+        font-size: 11px;
+      }
+      .video-controls input {
+        width: 100%;
+        height: 44px;
+        min-width: 25px;
+        accent-color: var(--orange);
+      }
+      #video-error {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        color: white;
+        background: #151515;
+        font-size: 13px;
+      }
+      #video-error:empty {
+        display: none;
+      }
+      .film-copy .lead {
+        margin-bottom: 25px;
+      }
+      .film-copy > p:not(.lead) {
+        color: var(--muted);
+        font-size: 16px;
+        max-width: 570px;
+      }
+      .film-copy .btn {
+        margin-top: 30px;
+      }
+      .gallery-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+        margin-bottom: 30px;
+      }
+      .gallery-head p {
+        max-width: 600px;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .gallery-grid > a:nth-child(1) {
+        grid-column: 1/6;
+        grid-row: 1/3;
+        height: 550px;
+      }
+      .gallery-grid > a:nth-child(2) {
+        grid-column: 6/10;
+        height: 265px;
+      }
+      .gallery-grid > a:nth-child(3) {
+        grid-column: 10/13;
+        height: 265px;
+      }
+      .gallery-grid > a:nth-child(4) {
+        grid-column: 6/9;
+        height: 265px;
+      }
+      .gallery-grid > a:nth-child(5) {
+        grid-column: 9/13;
+        height: 265px;
+      }
+      .gallery-grid > a:nth-child(6) {
+        grid-column: 1/-1;
+        height: 270px;
+      }
+      .gallery-grid a:last-child img {
+        object-position: center 65%;
+      }
+      .review-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+      .review-heading > p {
+        font-size: 14px;
+        color: var(--muted);
+        max-width: 550px;
+      }
+      .review-arrows {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .review-arrows button {
+        width: 48px;
+        height: 48px;
+        background: transparent;
+        border: 1px solid #7c695b;
+        border-radius: 50%;
+        font-size: 23px;
+      }
+      .review-arrows button:hover {
+        background: var(--orange);
+        color: #151515;
+      }
+      .review-arrows > span {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+      .review-card {
+        padding: 28px;
+        background: #242424;
+        border: 1px solid #42372f;
+        border-radius: 22px;
+        display: flex;
+        flex-direction: column;
+        min-height: 350px;
+      }
+      .review-mark {
+        font: 400 47px/1 var(--display);
+        color: var(--orange);
+      }
+      .review-card blockquote {
+        font-size: 14px;
+        line-height: 1.9;
+        margin: 14px 0 25px;
+        white-space: pre-line;
+      }
+      .review-card .review-author {
+        margin-top: auto;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .review-card small {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      .review-promo {
+        margin-top: 30px;
+        padding: 25px 30px;
+        border: 1px solid #685044;
+        border-radius: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+      }
+      .review-promo > div {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+      .review-promo strong {
+        font: 400 48px var(--display);
+        color: var(--orange);
+      }
+      .review-promo p {
+        font-size: 14px;
+      }
+      .review-promo small {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 4fr 7fr;
+        gap: 8%;
+        align-items: start;
+      }
+      .faq-photo {
+        height: 430px;
+        position: relative;
+        position: sticky;
+        top: 110px;
+      }
+      .faq-photo p {
+        position: absolute;
+        bottom: 22px;
+        left: 22px;
+        right: 22px;
+        padding: 16px;
+        background: #151515ed;
+        color: var(--cream);
+        border-radius: 15px;
+        font-size: 15px;
+      }
+      details {
+        border-top: 1px solid #c9ad9b;
+        padding: 15px 0;
+      }
+      summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        min-height: 44px;
+        list-style: none;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary > span {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1;
+      }
+      details[open] summary > span {
+        transform: rotate(45deg);
+      }
+      details > p {
+        font-size: 14px;
+        padding: 16px 25px 8px 0;
+        color: #5f4b3f;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        gap: 6%;
+        align-items: start;
+      }
+      .contact-phone {
+        font: 400 clamp(22px, 2.2vw, 32px) var(--display);
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+      }
+      .address {
+        color: var(--orange);
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .contact-grid p:not(.address) {
+        font-size: 15px;
+        color: var(--muted);
+      }
+      .contact-grid .btn {
+        margin: 25px 0 20px;
+      }
+      .socials {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .socials a {
+        min-height: 44px;
+        padding: 10px 15px;
+        border: 1px solid #6c5a4d;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+      .socials a:hover {
+        background: var(--orange);
+        color: #151515;
+      }
+      .map-box {
+        height: 420px;
+        border-radius: 26px;
+        overflow: hidden;
+        background: #242424;
+        border: 1px solid #5e4c3f;
+      }
+      .map-box iframe {
+        width: 100%;
+        height: 350px;
+        border: 0;
+        display: block;
+        filter: grayscale(0.5);
+      }
+      .map-box > a {
+        display: flex;
+        align-items: center;
+        min-height: 68px;
+        padding: 10px 22px;
+        font-size: 13px;
+      }
+      footer {
+        background: #0c0c0c;
+        padding: 30px 0;
+        border-top: 1px solid var(--line);
+      }
+      footer > .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        font-size: 12px;
+        color: #c4b0a3;
+      }
+      footer .brand {
+        color: white;
+      }
+      dialog {
+        width: min(1000px, 92vw);
+        max-height: 90svh;
+        padding: 0;
+        border: 1px solid #675243;
+        border-radius: 28px;
+        background: #202020;
+        color: var(--ink);
+        overflow: auto;
+      }
+      dialog::backdrop {
+        background: #000d;
+        backdrop-filter: blur(7px);
+      }
+      .modal-grid {
+        display: grid;
+        grid-template-columns: 5fr 6fr;
+      }
+      .modal-grid > img {
+        height: 100%;
+        min-height: 520px;
+        max-height: 750px;
+        object-fit: cover;
+      }
+      .modal-copy {
+        padding: 45px 35px 35px;
+        min-width: 0;
+      }
+      .modal-copy > span {
+        font-size: 12px;
+        color: #ffab82;
+      }
+      .modal-copy h2 {
+        font-size: 31px;
+        margin: 18px 0 25px;
+        overflow-wrap: anywhere;
+      }
+      .modal-copy p {
+        font-size: 14px;
+        color: var(--muted);
+        margin-bottom: 15px;
+      }
+      .modal-copy .btn {
+        margin: 15px 0;
+        display: flex;
+      }
+      .modal-copy .secondary-link {
+        font-size: 12px;
+      }
+      .modal-close {
+        position: sticky;
+        top: 15px;
+        float: right;
+        z-index: 2;
+        margin: 15px 15px -65px 0;
+        min-width: 48px;
+        height: 48px;
+        background: #151515;
+        border: 1px solid #9c7763;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+      }
+      .skip {
+        position: fixed;
+        left: 20px;
+        top: -120px;
+        background: white;
+        color: #151515;
+        padding: 15px;
+        border-radius: 12px;
+        z-index: 100;
+      }
+      .skip:focus {
+        top: 100px;
+      }
+      :focus-visible {
+        outline: 3px solid #64d3ff;
+        outline-offset: 4px;
+      }
+      .cream :focus-visible,
+      .planner :focus-visible {
+        outline-color: #003b55;
+      }
+      ::selection {
+        background: #ff5400;
+        color: #151515;
+      }
+      input {
+        caret-color: var(--orange);
+      }
+      .pointer-ring {
+        display: none;
+      }
+      .price-card > strong,
+      .ticket-total strong {
+        font-variant-numeric: tabular-nums;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+        .pointer-ring {
+          display: block;
+          width: 10px;
+          height: 10px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          border: 1px solid #ff9a68;
+          border-radius: 50%;
+          z-index: 99;
+          transition:
+            width 0.2s,
+            height 0.2s;
+        }
+        .pointer-ring.over {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      @media (max-width: 1100px) {
+        nav {
+          gap: 17px;
+        }
+        nav > a {
+          font-size: 12px;
+        }
+        .header-phone {
+          font-size: 12px;
+        }
+        .nav-wrap {
+          gap: 18px;
+        }
+        .price-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .price-card > strong {
+          font-size: 33px;
+        }
+        .price-card ul {
+          font-size: 14px;
+        }
+        .price-card .btn {
+          font-size: 14px;
+        }
+        .about-grid {
+          grid-template-columns: 5fr 6fr;
+          gap: 35px;
+        }
+        .about-small {
+          display: none;
+        }
+        .birthday-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .birthday-fun {
+          grid-column: 2;
+          grid-row: 2;
+          height: 240px;
+          margin: 0;
+        }
+        .birthday-copy {
+          grid-row: 1/3;
+        }
+        .birthday-main {
+          height: 350px;
+        }
+        .birthday-note {
+          display: none;
+        }
+        .planner-grid {
+          gap: 30px;
+        }
+        .choice-grid.time {
+          grid-template-columns: 1fr;
+        }
+        .choice-grid.time .choice > span {
+          min-height: 65px;
+        }
+        .choice-grid.time small {
+          margin-top: 2px;
+        }
+        .choice-grid.time b {
+          font-size: 14px;
+        }
+        .booking-ticket {
+          padding: 25px;
+        }
+        .booking-ticket h3 {
+          font-size: 23px;
+        }
+        .ticket-total strong {
+          font-size: 28px;
+        }
+        .game-image {
+          height: 230px;
+        }
+        .quest-banner {
+          gap: 30px;
+        }
+        .review-card {
+          padding: 23px;
+        }
+        .review-card blockquote {
+          font-size: 13px;
+        }
+      }
+      @media (max-width: 800px) {
+        section {
+          padding: 58px 0;
+        }
+        header {
+          height: 76px;
+        }
+        .brand img {
+          width: 54px;
+          height: 54px;
+        }
+        .brand > span {
+          font-size: 11px;
+        }
+        .header-phone {
+          font-size: 11px;
+          margin-left: auto;
+        }
+        .burger {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+          width: 46px;
+          height: 46px;
+          border: 1px solid #786252;
+          background: transparent;
+          border-radius: 12px;
+          flex: none;
+        }
+        .burger span {
+          width: 20px;
+          height: 2px;
+          background: var(--orange);
+        }
+        .burger[aria-expanded="true"] span:first-child {
+          transform: translateY(4.5px) rotate(45deg);
+        }
+        .burger[aria-expanded="true"] span:last-child {
+          transform: translateY(-4.5px) rotate(-45deg);
+        }
+        nav {
+          display: none;
+          position: fixed;
+          inset: 76px 0 0;
+          padding: 40px 5%;
+          background: #151515;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: center;
+          gap: 20px;
+          overflow: auto;
+        }
+        nav.open {
+          display: flex;
+        }
+        nav > a {
+          font: 400 23px/1.4 var(--display);
+          min-height: 54px;
+        }
+        .hero {
+          height: 900px;
+          min-height: 0;
+          max-height: none;
+          padding-top: 130px;
+        }
+        .hero-image img {
+          object-position: 58% center;
+        }
+        .hero-image:after {
+          background: linear-gradient(
+            0deg,
+            #151515f5,
+            #15151555 60%,
+            #151515b0
+          );
+        }
+        .hero h1 {
+          font-size: clamp(33px, 6.5vw, 52px);
+        }
+        .hero h1 em {
+          white-space: normal;
+        }
+        .hero-intro {
+          margin-top: 25px;
+        }
+        .hero-intro p {
+          font-size: 16px;
+        }
+        .hero-sticker {
+          width: 130px;
+          height: 130px;
+          bottom: 160px;
+          right: 5px;
+        }
+        .hero-sticker strong {
+          font-size: 38px;
+        }
+        .hero-sticker span {
+          font-size: 11px;
+        }
+        .hero-bottom {
+          gap: 15px;
+          flex-wrap: wrap;
+          font-size: 11px;
+          padding: 20px 0;
+        }
+        .hero-bottom b {
+          font-size: 18px;
+        }
+        .hero-bottom > a {
+          width: 100%;
+        }
+        .hero-actions {
+          align-items: stretch;
+          gap: 15px;
+        }
+        .hero-actions .secondary-link {
+          font-size: 12px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+        .about-main {
+          height: 330px;
+        }
+        .about-copy {
+          grid-row: 1;
+        }
+        .about-small {
+          display: none;
+        }
+        .about-details {
+          margin-top: 22px;
+        }
+        .catalog-top {
+          gap: 25px;
+        }
+        .catalog-top > p {
+          font-size: 14px;
+        }
+        .catalog-count {
+          display: none;
+        }
+        .filters {
+          gap: 8px;
+        }
+        .filter {
+          padding: 10px 14px;
+          font-size: 12px;
+        }
+        .game-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 15px;
+        }
+        .game-image {
+          height: 240px;
+        }
+        .game-card.quest .game-image {
+          height: 150px;
+        }
+        .game-card-bottom {
+          padding: 18px;
+        }
+        .game-card strong {
+          font-size: 17px;
+          min-height: 49px;
+        }
+        .game-genre {
+          font-size: 11px;
+        }
+        .game-open {
+          font-size: 11px;
+        }
+        .quest-banner {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+        .quest-banner > div:first-child {
+          height: 250px;
+        }
+        .quest-banner h3 {
+          font-size: 24px;
+        }
+        .birthday-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+        .birthday-copy {
+          grid-column: 1/-1;
+          grid-row: 1;
+        }
+        .birthday-main {
+          grid-column: 1;
+          grid-row: 2;
+          height: 300px;
+        }
+        .birthday-fun {
+          grid-column: 2;
+          grid-row: 2;
+          height: 250px;
+          align-self: end;
+        }
+        .birthday-copy .btn {
+          width: 100%;
+        }
+        .lounge-grid {
+          gap: 15px;
+        }
+        .lounge-large {
+          grid-column: 1/-1;
+          height: 350px;
+        }
+        .lounge-copy {
+          grid-column: 1/-1;
+          grid-row: 1;
+        }
+        .lounge-copy h3 {
+          font-size: 24px;
+        }
+        .lounge-retro {
+          grid-column: 1/7;
+          height: 220px;
+        }
+        .lounge-table {
+          grid-column: 7/13;
+          height: 220px;
+        }
+        .lounge-room {
+          display: none;
+        }
+        .price-head {
+          display: block;
+        }
+        .price-head > p {
+          font-size: 14px;
+          max-width: none;
+          margin-bottom: 25px;
+        }
+        .price-card {
+          padding: 23px;
+        }
+        .extras-list {
+          grid-template-columns: 1fr;
+        }
+        .planner-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .choice-grid.time {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .choice-grid.time .choice > span {
+          padding: 35px 12px 14px;
+          min-height: 105px;
+          justify-content: end;
+        }
+        .choice-grid.time .choice i {
+          top: 14px;
+        }
+        .choice-grid.time small {
+          font-size: 11px;
+        }
+        .choice-grid.time b {
+          font-size: 13px;
+        }
+        .booking-ticket {
+          position: static;
+          padding: 28px;
+        }
+        .ticket-total strong {
+          font-size: 34px;
+        }
+        .planner-intro {
+          font-size: 15px;
+        }
+        .film-layout {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        .film-copy {
+          grid-row: 1;
+        }
+        .film-copy > p:not(.lead) {
+          font-size: 15px;
+          max-width: none;
+        }
+        .video-frame {
+          justify-self: center;
+          height: 540px;
+          max-width: 380px;
+        }
+        .gallery-head {
+          display: block;
+        }
+        .gallery-head p {
+          font-size: 14px;
+        }
+        .gallery-head .secondary-link {
+          margin-top: 15px;
+        }
+        .gallery-grid {
+          gap: 14px;
+          grid-template-columns: 1fr 1fr;
+        }
+        .gallery-grid > a:nth-child(n) {
+          grid-column: auto;
+          grid-row: auto;
+          height: 230px;
+        }
+        .gallery-grid > a:nth-child(1) {
+          grid-column: 1/-1;
+          height: 340px;
+        }
+        .gallery-grid > a:nth-child(6) {
+          grid-column: 1/-1;
+          height: 240px;
+        }
+        .review-heading {
+          display: block;
+        }
+        .review-heading > p {
+          font-size: 13px;
+          margin-bottom: 25px;
+        }
+        .review-arrows {
+          justify-content: flex-end;
+        }
+        .review-grid {
+          grid-template-columns: 1fr;
+        }
+        .review-card {
+          min-height: 300px;
+          padding: 28px;
+        }
+        .review-card blockquote {
+          font-size: 15px;
+        }
+        .review-promo {
+          display: block;
+          padding: 25px;
+        }
+        .review-promo .btn {
+          margin-top: 22px;
+          width: 100%;
+        }
+        .review-promo strong {
+          font-size: 39px;
+        }
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+        .faq-photo {
+          display: none;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+        .contact-phone {
+          font-size: 26px;
+        }
+        .contact-grid .btn {
+          width: 100%;
+        }
+        .map-box {
+          height: 370px;
+        }
+        .map-box iframe {
+          height: 300px;
+        }
+        footer > .wrap {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 25px;
+        }
+        footer p {
+          font-size: 11px;
+        }
+        footer .wrap > span {
+          grid-column: 1/-1;
+          font-size: 11px;
+        }
+        .modal-grid {
+          grid-template-columns: 1fr;
+        }
+        .modal-grid > img {
+          height: 280px;
+          min-height: 0;
+          max-height: none;
+        }
+        .modal-copy {
+          padding: 28px;
+        }
+        .modal-copy h2 {
+          font-size: 28px;
+        }
+        .modal-close {
+          position: sticky;
+          top: 12px;
+        }
+        .modal-copy .btn {
+          width: 100%;
+        }
+      }
+      @media (max-width: 440px) {
+        .header-phone {
+          display: none;
+        }
+        .hero {
+          height: 850px;
+        }
+        .hero h1 {
+          font-size: 35px;
+        }
+        .hero-actions {
+          display: block;
+        }
+        .hero-actions .btn {
+          width: 100%;
+        }
+        .hero-actions .secondary-link {
+          margin-top: 12px;
+        }
+        .hero-sticker {
+          bottom: 150px;
+          width: 115px;
+          height: 115px;
+        }
+        .hero-sticker strong {
+          font-size: 32px;
+        }
+        .hero-intro p br {
+          display: none;
+        }
+        h2 {
+          font-size: 29px;
+          overflow-wrap: anywhere;
+        }
+        .game-image {
+          height: 195px;
+        }
+        .game-card.quest .game-image {
+          height: 125px;
+        }
+        .game-card strong {
+          font-size: 15px;
+          min-height: 44px;
+        }
+        .game-card-bottom {
+          padding: 15px;
+        }
+        .game-open {
+          font-size: 11px;
+        }
+        .game-genre {
+          min-height: 30px;
+        }
+        .price-grid {
+          grid-template-columns: 1fr;
+        }
+        .price-card h3 {
+          font-size: 23px;
+        }
+        .price-card > p,
+        .price-card > span {
+          font-size: 14px;
+        }
+        .price-card ul {
+          font-size: 14px;
+        }
+        .price-card > strong {
+          font-size: 36px;
+        }
+        .price-card small {
+          font-size: 12px;
+        }
+        .birthday-main {
+          height: 250px;
+        }
+        .birthday-fun {
+          height: 210px;
+        }
+        .lounge-retro,
+        .lounge-table {
+          height: 190px;
+        }
+        .choice > span {
+          padding: 16px 28px 16px 14px;
+        }
+        .choice b {
+          font-size: 14px;
+        }
+        .choice small {
+          font-size: 11px;
+        }
+        .choice i {
+          right: 12px;
+        }
+        .sliders {
+          padding: 16px;
+        }
+        .addon {
+          font-size: 12px;
+        }
+        .booking-ticket {
+          padding: 24px;
+        }
+        .ticket-total strong {
+          font-size: 30px;
+        }
+        .booking-ticket .btn {
+          font-size: 12px;
+        }
+        .gallery-grid > a:nth-child(n) {
+          height: 190px;
+        }
+        .gallery-grid > a:nth-child(1) {
+          height: 300px;
+        }
+        .gallery-grid > a:nth-child(6) {
+          height: 220px;
+        }
+        .contact-phone {
+          font-size: 23px;
+        }
+        .address {
+          font-size: 18px;
+        }
+        .socials {
+          gap: 8px;
+        }
+        .socials a {
+          font-size: 11px;
+          padding: 10px 12px;
+        }
+        .review-promo > div {
+          gap: 18px;
+        }
+        .review-promo strong {
+          font-size: 33px;
+        }
+        .review-promo p {
+          font-size: 12px;
+        }
+        .review-promo small {
+          font-size: 11px;
+        }
+        .modal-copy h2 {
+          font-size: 25px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation: none !important;
+          transition: none !important;
+        }
+        .photo:hover img,
+        .game-card:hover img,
+        .game-card:hover,
+        .btn:hover {
+          transform: none;
+        }
+      }
+
+      .planner h2 em {
+        color: #fff;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      if (window.tailwind)
+        tailwind.config = { corePlugins: { preflight: false } };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "VR ARENA ONLINE",
+        "description": "Арена виртуальной реальности в Иркутске. Командные игры, VR-квесты и дни рождения.",
+        "telephone": "+79245325563",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "улица Тимирязева, 32",
+          "addressLocality": "Иркутск",
+          "addressCountry": "RU"
+        },
+        "hasMap": "https://2gis.ru/irkutsk/firm/70000001110369610",
+        "sameAs": [
+          "https://www.instagram.com/vrarena.irk/",
+          "https://t.me/vrarenairk",
+          "https://vk.ru/vrarenairk"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+    <header>
+      <div class="nav-wrap">
+        <a class="brand" href="#home" aria-label="VR ARENA ONLINE — на главную"
+          ><img
+            src="assets/logo.webp"
+            alt="Логотип VR ARENA ONLINE"
+            class=""
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          /><span>ARENA<br /><b>ONLINE</b></span></a
+        >
+        <nav id="navigation" aria-label="Навигация">
+          <a href="#catalog">Игры и квесты</a
+          ><a href="#birthday">День рождения</a><a href="#prices">Цены</a
+          ><a href="#contact">Как добраться</a>
+        </nav>
+        <a class="header-phone" href="tel:+79245325563">+7 924 532 55 63</a
+        ><button
+          class="burger"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="hero-image">
+          <img
+            src="assets/photo-12.webp"
+            alt="Компания друзей играет на VR-арене в Иркутске"
+            class=""
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="wrap hero-content">
+          <h1>VR-арена<br />в Иркутске.<br /><em>Ты — внутри игры.</em></h1>
+          <div class="hero-intro">
+            <p>
+              Собирай своих. Меняй реальность.<br />Командные VR-игры, квесты и
+              праздники,<br />которые продолжают обсуждать после.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="tel:+79245325563"
+                >Забронировать игру<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg></a
+              ><a class="secondary-link" href="#catalog">Выбрать свой мир ↓</a>
+            </div>
+          </div>
+          <div class="hero-sticker">
+            <strong>6+</strong><span>Первый раз?<br />Всё покажем.</span>
+          </div>
+          <div class="hero-bottom">
+            <span><b>120 м²</b> арены для движения</span
+            ><span><b>До 10</b> игроков по тарифу</span
+            ><a href="#contact">Тимирязева, 32 · Иркутск</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="">
+        <div class="wrap">
+          <h2>Вместе веселее.<br /><em>Особенно в другой реальности.</em></h2>
+          <div class="about-grid">
+            <div class="about-main photo">
+              <img
+                src="assets/arena.webp"
+                alt="Гости свободно перемещаются по арене"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="about-copy">
+              <p class="lead">
+                Здесь не смотрят на приключение через экран. Здесь становятся
+                его частью.
+              </p>
+              <p>
+                Просторная арена, VR-шлемы и твоя команда. Можно спасать мир,
+                искать сокровища или устроить дружеский реванш. Инструктор
+                поможет выбрать игру и разобраться с управлением.
+              </p>
+              <div class="about-details">
+                <span>Детям 6+<br /><b>и взрослым</b></span
+                ><span>Для друзей,<br /><b>семьи и коллег</b></span>
+              </div>
+            </div>
+            <div class="about-small photo">
+              <img
+                src="assets/friends.webp"
+                alt="Игроки в VR-шлемах на арене"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="catalog" class="catalog">
+        <div class="wrap">
+          <h2>Сегодня ты кто?<br /><em>Выбирай свой мир.</em></h2>
+          <div class="catalog-top">
+            <p>
+              Командные битвы, семейные мини-игры и приключения. Открой карточку
+              — посмотри сюжет и выбери настроение.
+            </p>
+            <div class="catalog-count">
+              <strong>19</strong><span>игр и квестов<br />в этом каталоге</span>
+            </div>
+          </div>
+          <div class="filters" role="group" aria-label="Жанры каталога">
+            <button class="filter active" data-filter="Все" aria-pressed="true">
+              Все</button
+            ><button class="filter" data-filter="Шутеры" aria-pressed="false">
+              Шутеры</button
+            ><button
+              class="filter"
+              data-filter="Детские и семейные"
+              aria-pressed="false"
+            >
+              Детские и семейные</button
+            ><button
+              class="filter"
+              data-filter="Приключения"
+              aria-pressed="false"
+            >
+              Приключения</button
+            ><button class="filter" data-filter="Хорроры" aria-pressed="false">
+              Хорроры</button
+            ><button class="filter" data-filter="Квесты" aria-pressed="false">
+              Квесты
+            </button>
+          </div>
+          <p class="catalog-result" role="status">Показаны все 19 миров</p>
+          <div class="game-grid">
+            <button
+              class="game-card game"
+              data-game="0"
+              data-category="Шутеры"
+              aria-label="Подробнее: Galactic Arena"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-0.webp"
+                  alt="Galactic Arena"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Шутер · экшен</span
+                ><strong>Galactic Arena</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="1"
+              data-category="Детские и семейные"
+              aria-label="Подробнее: Party Games"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-1.webp"
+                  alt="Party Games"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Мини-игры · детские</span
+                ><strong>Party Games</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="2"
+              data-category="Хорроры"
+              aria-label="Подробнее: Portal Zombie"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-2.webp"
+                  alt="Portal Zombie"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Шутер · хоррор</span
+                ><strong>Portal Zombie</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="3"
+              data-category="Детские и семейные"
+              aria-label="Подробнее: Portal Arcade"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-3.webp"
+                  alt="Portal Arcade"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Шутер · детский</span
+                ><strong>Portal Arcade</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="4"
+              data-category="Шутеры"
+              aria-label="Подробнее: Portal Strike"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-4.webp"
+                  alt="Portal Strike"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Шутер · экшен</span
+                ><strong>Portal Strike</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="5"
+              data-category="Шутеры"
+              aria-label="Подробнее: Portal Mafia"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-5.webp"
+                  alt="Portal Mafia"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Шутер · экшен</span
+                ><strong>Portal Mafia</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="6"
+              data-category="Приключения"
+              aria-label="Подробнее: Magic animals"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-6.webp"
+                  alt="Magic animals"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Аниме · экшен</span
+                ><strong>Magic animals</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="7"
+              data-category="Шутеры"
+              aria-label="Подробнее: Military Station"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-7.webp"
+                  alt="Military Station"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Гиперреалистичный шутер</span
+                ><strong>Military Station</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card game"
+              data-game="8"
+              data-category="Детские и семейные"
+              aria-label="Подробнее: Family Game"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/game-8.webp"
+                  alt="Family Game"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">Мини-игры · семейное</span
+                ><strong>Family Game</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="9"
+              data-category="Квесты"
+              aria-label="Подробнее: Поместье зла"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-0.webp"
+                  alt="Поместье зла"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Поместье зла</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="10"
+              data-category="Квесты"
+              aria-label="Подробнее: Машина времени"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-1.webp"
+                  alt="Машина времени"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Машина времени</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="11"
+              data-category="Квесты"
+              aria-label="Подробнее: Храм Атлантиды"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-2.webp"
+                  alt="Храм Атлантиды"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Храм Атлантиды</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="12"
+              data-category="Квесты"
+              aria-label="Подробнее: Дикий Запад"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-3.webp"
+                  alt="Дикий Запад"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Дикий Запад</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="13"
+              data-category="Квесты"
+              aria-label="Подробнее: Проклятие пиратов"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-4.webp"
+                  alt="Проклятие пиратов"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Проклятие пиратов</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="14"
+              data-category="Квесты"
+              aria-label="Подробнее: День дракона"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-5.webp"
+                  alt="День дракона"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>День дракона</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="15"
+              data-category="Квесты"
+              aria-label="Подробнее: Космическая станция"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-6.webp"
+                  alt="Космическая станция"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Космическая станция</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="16"
+              data-category="Квесты"
+              aria-label="Подробнее: Самурай"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-7.webp"
+                  alt="Самурай"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Самурай</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="17"
+              data-category="Квесты"
+              aria-label="Подробнее: Пропавшие"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-8.webp"
+                  alt="Пропавшие"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Пропавшие</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              ></button
+            ><button
+              class="game-card quest"
+              data-game="18"
+              data-category="Квесты"
+              aria-label="Подробнее: Психбольница"
+            >
+              <span class="game-image"
+                ><img
+                  src="assets/quest-9.webp"
+                  alt="Психбольница"
+                  class=""
+                  loading="lazy"
+                  decoding="async" /></span
+              ><span class="game-card-bottom"
+                ><span class="game-genre">VR-квест · 2–4 человека</span
+                ><strong>Психбольница</strong
+                ><span class="game-open"
+                  >Смотреть сюжет <span aria-hidden="true">+</span></span
+                ></span
+              >
+            </button>
+          </div>
+          <div class="quest-banner">
+            <div>
+              <img
+                src="assets/quest-world.webp"
+                alt="Пиратский мир из каталога VR-квестов"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div>
+              <h3>Квест — это<br />когда «давай думать вместе».</h3>
+              <p>
+                Компания 2–4 человека, один час приключения. Ищите предметы,
+                находите подсказки и спасайте мир. Здесь важнее смекалка и
+                командная работа.
+              </p>
+              <button class="btn" data-quest-filter>
+                Выбрать квест <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="birthday" class="cream">
+        <div class="wrap">
+          <h2>День рождения,<br /><em>который не хочется заканчивать.</em></h2>
+          <div class="birthday-grid">
+            <div class="birthday-copy">
+              <p class="lead">
+                «Мам, давай ещё раунд!»<br />Вот такой план на праздник.
+              </p>
+              <p>
+                Друзья вместе, у каждого — своя роль в приключении. После игры
+                можно обсудить самые смешные моменты, задуть свечи и
+                переключиться на развлечения в лаунже.
+              </p>
+              <ul class="feature-list">
+                <li>VR-сценарии под возраст компании</li>
+                <li>Пространство для вашей компании и администраторы рядом</li>
+                <li>Столы для праздничного застолья</li>
+                <li>
+                  Дополнительно: батуты, аниматор, ростовая кукла и бумажный
+                  дождь
+                </li>
+              </ul>
+              <a class="btn" href="#planner"
+                >Собрать праздник<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+            <div class="birthday-main photo">
+              <img
+                src="assets/photo-10.webp"
+                alt="Дети играют в VR на празднике"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="birthday-fun photo">
+              <img
+                src="assets/birthday.webp"
+                alt="Дети с большой ростовой куклой белого медведя"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <span class="birthday-note"
+              >Взрослым тоже<br />можно в команду!</span
+            >
+          </div>
+        </div>
+      </section>
+      <section id="lounge" class="">
+        <div class="wrap">
+          <h2>Сняли шлемы.<br /><em>Продолжили веселиться.</em></h2>
+          <div class="lounge-grid">
+            <div class="photo lounge-large">
+              <img
+                src="assets/photo-15.webp"
+                alt="Друзья играют в настольный футбол в зоне отдыха"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="lounge-copy">
+              <h3>Лаунж, где никто<br />не сидит без дела.</h3>
+              <p>
+                Аэрохоккей, настольный футбол, ретро-приставка. Пока одни
+                обсуждают виртуальную победу, другие уже начинают новый матч.
+              </p>
+              <p>
+                Удобные столы для застолья и холодильник с напитками. А для
+                вкусного продолжения — промокоды на роллы и пиццу: подробности у
+                администратора.
+              </p>
+            </div>
+            <div class="photo lounge-retro">
+              <img
+                src="assets/photo-11.webp"
+                alt="Гости играют на ретро-приставке"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="photo lounge-table">
+              <img
+                src="assets/photo-14.webp"
+                alt="Аэрохоккей и настольный футбол"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="photo lounge-room">
+              <img
+                src="assets/lounge.webp"
+                alt="Комфортная зона отдыха VR ARENA ONLINE"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="prices" class="cream">
+        <div class="wrap">
+          <h2>Хороший план.<br /><em>Понятная стоимость.</em></h2>
+          <div class="price-head">
+            <p>
+              Почасовая аренда VR-арены — до 10 человек. Пакеты — для праздника
+              с лаунж-зоной. Время и состав программы подтвердим при
+              бронировании.
+            </p>
+            <div class="time-toggle" role="group" aria-label="Время тарифов">
+              <button data-price-time="day" aria-pressed="true" class="active">
+                День ·11:00–17:00</button
+              ><button data-price-time="evening" aria-pressed="false">
+                Вечер ·18:00–23:00
+              </button>
+            </div>
+          </div>
+          <div class="price-grid">
+            <article class="price-card hourly">
+              <h3>Просто поиграть</h3>
+              <p>Аренда VR-арены</p>
+              <strong data-price-day="5000" data-price-evening="6000"
+                >5000 ₽</strong
+              ><span>за 1 час · до 10 человек</span>
+              <ul>
+                <li>Командные VR-игры</li>
+                <li>Инструктаж перед игрой</li>
+              </ul>
+              <a data-plan="hour" class="btn" href="#planner"
+                >Хочу поиграть<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg></a
+              ><small>Ночь 00:00–05:00 —8000 ₽/час, минимум 2 часа.</small>
+            </article>
+            <article class="price-card">
+              <h3>Мини</h3>
+              <p>2 часа отдыха</p>
+              <strong data-price-day="14000" data-price-evening="16000"
+                >14000 ₽</strong
+              ><span>1 час VR · лаунж включён</span>
+              <ul>
+                <li>Аэрохоккей и настольный футбол</li>
+                <li>Фотозона</li>
+                <li>Детская дискотека со светомузыкой</li>
+                <li>Подарок имениннику</li>
+              </ul>
+              <a data-plan="mini" class="btn" href="#planner"
+                >Выбрать Мини<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+            </article>
+            <article class="price-card featured">
+              <h3>Стандарт</h3>
+              <p>3 часа отдыха</p>
+              <strong data-price-day="20000" data-price-evening="22000"
+                >20000 ₽</strong
+              ><span>2 часа VR · лаунж включён</span>
+              <ul>
+                <li>Аэрохоккей и настольный футбол</li>
+                <li>Фотозона</li>
+                <li>Детская дискотека со светомузыкой</li>
+                <li>Подарок имениннику</li>
+              </ul>
+              <a data-plan="standard" class="btn" href="#planner"
+                >Выбрать Стандарт<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+            </article>
+            <article class="price-card">
+              <h3>Максимум</h3>
+              <p>4 часа отдыха</p>
+              <strong data-price-day="30000" data-price-evening="33000"
+                >30000 ₽</strong
+              ><span>2 часа VR +1 час батутов · лаунж включён</span>
+              <ul>
+                <li>Аэрохоккей и настольный футбол</li>
+                <li>Фотозона</li>
+                <li>Детская дискотека со светомузыкой</li>
+                <li>Подарок имениннику</li>
+              </ul>
+              <a data-plan="max" class="btn" href="#planner"
+                >Выбрать Максимум<svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+            </article>
+          </div>
+          <details class="extras">
+            <summary>
+              Дополнительные услуги <span aria-hidden="true">+</span>
+            </summary>
+            <div class="extras-list">
+              <div><span>Лаунж-зона</span><b>4000 ₽/час</b></div>
+              <div><span>VR + лаунж-зона</span><b>8000 ₽/час</b></div>
+              <div><span>Надувные батуты</span><b>5000 ₽/30 мин</b></div>
+              <div>
+                <span>Ростовая кукла «Белый медведь»</span><b>1000 ₽/15 мин</b>
+              </div>
+              <div><span>Профессиональный аниматор</span><b>По запросу</b></div>
+              <div><span>Бумажный дождь</span><b>По запросу</b></div>
+            </div>
+            <p>
+              Дополнительные услуги к пакетам «Мини», «Стандарт» и «Максимум».
+            </p>
+          </details>
+          <div class="price-sources">
+            <span>Прайс из материалов арены:</span
+            ><a
+              href="assets/sources/source-16.webp"
+              target="_blank"
+              rel="noopener"
+              >Тарифы</a
+            ><a
+              href="assets/sources/source-17.webp"
+              target="_blank"
+              rel="noopener"
+              >Пакеты</a
+            ><a
+              href="assets/sources/source-18.webp"
+              target="_blank"
+              rel="noopener"
+              >Допуслуги</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="planner" class="planner">
+        <div class="wrap">
+          <h2>Соберите компанию.<br /><em>Праздник соберём здесь.</em></h2>
+          <div class="planner-grid">
+            <form id="planner-form">
+              <p class="planner-intro">
+                Выберите программу и время. Получится предварительный расчёт и
+                готовый текст для администратора.
+              </p>
+              <fieldset>
+                <legend>Ваш формат</legend>
+                <div class="choice-grid plan">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="plan"
+                      value="hour"
+                      checked /><span
+                      ><b>Поиграть</b><small>Почасовая аренда</small
+                      ><i aria-hidden="true"></i></span></label
+                  ><label class="choice"
+                    ><input type="radio" name="plan" value="mini" /><span
+                      ><b>Мини</b><small>2 часа ·1 час VR</small
+                      ><i aria-hidden="true"></i></span></label
+                  ><label class="choice"
+                    ><input type="radio" name="plan" value="standard" /><span
+                      ><b>Стандарт</b><small>3 часа ·2 часа VR</small
+                      ><i aria-hidden="true"></i></span></label
+                  ><label class="choice"
+                    ><input type="radio" name="plan" value="max" /><span
+                      ><b>Максимум</b><small>4 часа · VR и батуты</small
+                      ><i aria-hidden="true"></i></span
+                  ></label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Когда встречаемся?</legend>
+                <div class="choice-grid time">
+                  <label class="choice"
+                    ><input type="radio" name="time" value="day" checked /><span
+                      ><b>Днём</b><small>11:00–17:00</small
+                      ><i aria-hidden="true"></i></span></label
+                  ><label class="choice"
+                    ><input type="radio" name="time" value="evening" /><span
+                      ><b>Вечером</b><small>18:00–23:00</small
+                      ><i aria-hidden="true"></i></span></label
+                  ><label class="choice"
+                    ><input type="radio" name="time" value="night" /><span
+                      ><b>Ночью</b><small>00:00–05:00</small
+                      ><i aria-hidden="true"></i></span
+                  ></label>
+                </div>
+              </fieldset>
+              <p id="night-note" class="form-note">
+                Ночью аренда от 2 часов. Пакеты ночью — по согласованию.
+              </p>
+              <div class="sliders">
+                <div>
+                  <label for="guests"
+                    >Ваша компания
+                    <output id="guests-value">6 человек</output></label
+                  ><input id="guests" type="range" min="2" max="10" value="6" />
+                </div>
+                <div id="hours-wrap">
+                  <label for="hours"
+                    >Часов игры <output id="hours-value">1 час</output></label
+                  ><input id="hours" type="range" min="1" max="5" value="1" />
+                </div>
+              </div>
+              <fieldset id="addon-fieldset">
+                <legend>Добавим к пакету?</legend>
+                <label class="addon"
+                  ><input type="checkbox" id="bear" /><span
+                    >Белый медведь ·15 мин</span
+                  ><b>+1000 ₽</b></label
+                ><label class="addon"
+                  ><input type="checkbox" id="trampoline" /><span
+                    >Батуты ·30 мин</span
+                  ><b>+5000 ₽</b></label
+                ><small
+                  >Другие дополнения и продление обсудим с
+                  администратором.</small
+                >
+              </fieldset>
+            </form>
+            <aside class="booking-ticket" aria-label="Предварительный расчёт">
+              <div class="ticket-top">
+                <span>ВАШ ВЕЧЕР</span
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 5h14v14H5zM8 9h3m-1-1v3m5-2h1m-1 4h1" />
+                </svg>
+              </div>
+              <h3 id="summary-title">Поиграть на арене</h3>
+              <p id="summary-detail" aria-live="polite"></p>
+              <div class="ticket-total">
+                <span>Предварительно</span><strong id="total">5000 ₽</strong>
+              </div>
+              <p class="per-person" id="per-person"></p>
+              <p class="deposit">
+                Предоплата для закрепления брони —1000 ₽ после подтверждения
+                даты.
+              </p>
+              <a class="btn" href="tel:+79245325563"
+                >Уточнить дату и забронировать<svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg></a
+              ><button id="copy-plan" class="btn outline">
+                Скопировать и открыть чат <span aria-hidden="true">+</span>
+              </button>
+              <p id="copy-state" role="status"></p>
+              <textarea
+                id="copy-fallback"
+                readonly
+                hidden
+                aria-label="Текст плана для копирования"
+              ></textarea
+              ><a
+                id="admin-chat-fallback"
+                class="btn outline"
+                href="https://ig.me/m/vrarena.irk"
+                hidden
+                >Открыть чат администратора →</a
+              ><small
+                >Расчёт не закрепляет дату. Наличие, условия скидки и итоговую
+                стоимость подтверждает администратор.</small
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section id="film" class="">
+        <div class="wrap">
+          <h2>Сначала — инструктаж.<br /><em>Потом — «давайте ещё!»</em></h2>
+          <div class="film-layout">
+            <div class="video-frame">
+              <video
+                playsinline
+                preload="none"
+                poster="assets/video-poster.webp"
+                aria-label="Как проходит игра в VR ARENA ONLINE и живые отзывы гостей"
+              >
+                <source src="assets/arena.mp4" type="video/mp4" /></video
+              ><button class="play-video" aria-label="Воспроизвести видео">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m9 5 10 7-10 7Z" />
+                </svg>
+              </button>
+              <div class="video-controls">
+                <button id="video-pause" aria-label="Пауза">Ⅱ</button
+                ><input
+                  id="video-seek"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  step="0.1"
+                  aria-label="Перемотка видео"
+                /><button id="video-sound" aria-label="Выключить звук">
+                  Звук</button
+                ><button id="video-full" aria-label="На весь экран">⛶</button>
+              </div>
+              <p id="video-error" role="status"></p>
+            </div>
+            <div class="film-copy">
+              <p class="lead">Посмотрите, как это бывает на самом деле.</p>
+              <p>
+                Объясняем, показываем, помогаем надеть шлем. А дальше начинается
+                игра: смех, азарт, неожиданные победы и тот самый «ты видел?!»
+              </p>
+              <p>
+                В конце ролика — живые впечатления гостей. Когда уже не нужно
+                искать слова, потому что всё написано на лицах.
+              </p>
+              <a class="btn" href="tel:+79245325563"
+                >Хочу такие же эмоции<svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="cream">
+        <div class="wrap">
+          <h2>Телефон?<br /><em>Какой телефон?</em></h2>
+          <div class="gallery-head">
+            <p>
+              Здесь интереснее действовать вместе. Дети становятся героями,
+              взрослые включаются в игру — и у компании появляется своя история.
+            </p>
+            <a
+              class="secondary-link"
+              href="https://www.instagram.com/vrarena.irk/"
+              target="_blank"
+              rel="noopener"
+              >Больше моментов в Instagram →</a
+            >
+          </div>
+          <div class="gallery-grid">
+            <a
+              href="assets/photo-9.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/photo-9.webp"
+                alt="Эмоции участников командной VR-игры"
+                class=""
+                loading="lazy"
+                decoding="async" /></a
+            ><a
+              href="assets/photo-10.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/photo-10.webp"
+                alt="Дети на VR-арене"
+                class=""
+                loading="lazy"
+                decoding="async" /></a
+            ><a
+              href="assets/photo-12.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/photo-12.webp"
+                alt="Командный заезд на просторной арене"
+                class=""
+                loading="lazy"
+                decoding="async" /></a
+            ><a
+              href="assets/photo-13.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/photo-13.webp"
+                alt="Оборудование арены: VR-шлемы"
+                class=""
+                loading="lazy"
+                decoding="async" /></a
+            ><a
+              href="assets/headsets.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/headsets.webp"
+                alt="Шлемы готовы к следующей игре"
+                class=""
+                loading="lazy"
+                decoding="async" /></a
+            ><a
+              href="assets/company.webp"
+              target="_blank"
+              rel="noopener"
+              class="photo"
+              ><img
+                src="assets/company.webp"
+                alt="Компания отдыхает за настольным футболом"
+                class=""
+                loading="lazy"
+                decoding="async"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="">
+        <div class="wrap">
+          <h2>После игры<br /><em>говорят вот так.</em></h2>
+          <div class="review-heading">
+            <p>
+              Гости о командных играх, праздниках и отдыхе на арене. Отзывы из
+              2ГИС.
+            </p>
+            <div class="review-arrows">
+              <button id="review-prev" aria-label="Предыдущие отзывы">←</button
+              ><span id="review-counter" aria-live="polite">1–3 /10</span
+              ><button id="review-next" aria-label="Следующие отзывы">→</button>
+            </div>
+          </div>
+          <div
+            id="review-list"
+            class="review-grid"
+            aria-label="Отзывы гостей"
+          ></div>
+          <div class="review-promo">
+            <div>
+              <strong>−15%</strong>
+              <p>
+                За честный отзыв в 2ГИС.<br /><small
+                  >Условия и момент применения скидки уточните до оплаты.</small
+                >
+              </p>
+            </div>
+            <a
+              class="btn outline"
+              href="https://2gis.ru/irkutsk/firm/70000001110369610"
+              target="_blank"
+              rel="noopener"
+              >Читать и оставить отзыв →</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="cream">
+        <div class="wrap">
+          <h2>Всё, что хочется<br /><em>знать до старта.</em></h2>
+          <div class="faq-grid">
+            <div class="faq-photo photo">
+              <img
+                src="assets/photo-13.webp"
+                alt="VR-шлемы на арене ONLINE"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+              <p>Первый раз в VR?<br />Начинаем с понятного инструктажа.</p>
+            </div>
+            <div class="faq-list">
+              <details>
+                <summary>
+                  Что такое арена виртуальной реальности?<span
+                    aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p>
+                  Это игровое пространство, в котором вы надеваете VR-шлем и
+                  оказываетесь внутри виртуального мира. Игроки перемещаются по
+                  арене, видят друг друга в игре и действуют командой. Перед
+                  стартом инструктор объясняет правила и помогает освоиться.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  С какого возраста можно играть?<span aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p>
+                  Большинство игр подходят детям от 6 лет. Для школьных групп и
+                  дней рождения подбираем сценарий по возрасту. Для хорроров и
+                  других отдельных игр возрастные рекомендации уточняйте у
+                  администратора.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Можно играть без опыта?<span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Конечно. Большинство гостей впервые надевают шлем именно
+                  здесь. Начинаем с инструктажа, знакомим с управлением и
+                  помогаем во время игры.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Что есть кроме VR?<span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Арена 120 м² и комфортная зона отдыха: аэрохоккей, настольный
+                  футбол, ретро-приставка, столы для застолья и холодильник с
+                  напитками. Есть промокоды на роллы и пиццу — условия уточните
+                  у администратора.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Можно провести день рождения?<span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Да, детский или взрослый. Выбирайте пакет с VR и лаунжем;
+                  дополнительно можно обсудить ростовую куклу, батуты,
+                  аниматора, дискотеку и бумажный дождь. Включённые услуги
+                  указаны в прайсе.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Будут ли на арене посторонние?<span aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p>
+                  При бронировании арены с комнатой отдыха пространство
+                  предоставляется вашей компании. С вами остаются
+                  администраторы, которые помогают с оборудованием и
+                  организацией.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Что за VR-квесты?<span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Приключения для компании 2–4 человека: ищете подсказки,
+                  решаете головоломки и проходите сюжет вместе. По материалам
+                  арены один квест рассчитан на 1 час.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Как забронировать и нужна ли предоплата?<span
+                    aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p>
+                  Позвоните +7 924 532 55 63 или напишите в Instagram.
+                  Администратор подтвердит дату, время и программу. Бронь
+                  закрепляется после предоплаты 1000 ₽. Условия переноса и
+                  отмены уточните до оплаты.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Как работает скидка 15% за отзыв?<span aria-hidden="true"
+                    >+</span
+                  >
+                </summary>
+                <p>
+                  По материалам арены действует скидка 15% за отзыв в 2ГИС. Не
+                  требуется положительная оценка: делитесь честными
+                  впечатлениями. Когда применяется скидка, на какие услуги и
+                  суммируется ли с другими предложениями — уточните до оплаты.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="">
+        <div class="wrap">
+          <h2>Ваш следующий<br /><em>«когда повторим?» — здесь.</em></h2>
+          <div class="contact-grid">
+            <div>
+              <a class="contact-phone" href="tel:+79245325563"
+                >+7 924 532 55 63</a
+              >
+              <p class="address">Иркутск, ул. Тимирязева, 32</p>
+              <p>
+                Позвоните или напишите — подберём игру,<br />обсудим праздник и
+                найдём время для вашей компании.
+              </p>
+              <a class="btn" href="tel:+79245325563"
+                >Позвонить и выбрать дату<svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h15m-6-6 6 6-6 6" /></svg
+              ></a>
+              <div class="socials">
+                <a
+                  href="https://www.instagram.com/vrarena.irk/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                ><a
+                  href="https://t.me/vrarenairk"
+                  target="_blank"
+                  rel="noopener"
+                  >Telegram</a
+                ><a
+                  href="https://vk.ru/vrarenairk"
+                  target="_blank"
+                  rel="noopener"
+                  >ВКонтакте</a
+                ><a
+                  href="https://max.ru/join/IG-p9QOvInsGw5HhuXy_f2VGFDsRHcYdQSNCMBhqU8w"
+                  target="_blank"
+                  rel="noopener"
+                  >MAX</a
+                >
+              </div>
+              <a
+                class="secondary-link"
+                href="https://2gis.ru/irkutsk/geo/1548748027091370"
+                target="_blank"
+                rel="noopener"
+                >Маршрут в 2ГИС →</a
+              >
+            </div>
+            <div class="map-box">
+              <iframe
+                title="Карта: VR ARENA ONLINE, Иркутск, Тимирязева32"
+                src="https://maps.google.com/maps?q=Иркутск%20Тимирязева%2032&output=embed&hl=ru"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe
+              ><a
+                href="https://2gis.ru/irkutsk/firm/70000001110369610"
+                target="_blank"
+                rel="noopener"
+                >Открыть карточку арены в 2ГИС →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <a class="brand" href="#home"
+          ><img
+            src="assets/logo.webp"
+            alt="VR ARENA ONLINE"
+            class=""
+            loading="lazy"
+            decoding="async"
+          /><span>ARENA<br /><b>ONLINE</b></span></a
+        >
+        <p>Реальные эмоции.<br />Виртуальные миры.</p>
+        <span>Иркутск · Тимирязева, 32<br />©2026 VR ARENA ONLINE</span>
+      </div>
+    </footer>
+    <dialog id="game-dialog" aria-labelledby="dialog-title">
+      <button class="modal-close" aria-label="Закрыть карточку">×</button>
+      <div class="modal-grid">
+        <img
+          id="dialog-image"
+          src="assets/game-0.webp"
+          alt="Изображение выбранной игры"
+        />
+        <div class="modal-copy">
+          <span id="dialog-genre"></span>
+          <h2 id="dialog-title"></h2>
+          <div id="dialog-description"></div>
+          <p id="dialog-note"></p>
+          <a class="btn" href="tel:+79245325563"
+            >Хочу в эту игру<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12h15m-6-6 6 6-6 6" /></svg></a
+          ><a
+            id="dialog-source"
+            class="secondary-link"
+            target="_blank"
+            rel="noopener"
+            >Карточка из каталога арены →</a
+          >
+        </div>
+      </div>
+    </dialog>
+    <div class="pointer-ring" aria-hidden="true"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.ARENA_DATA = {
+          catalog: [
+            {
+              title: "Galactic Arena",
+              category: "Шутеры",
+              image: "game-0",
+              genre: "Шутер · экшен",
+              description: [
+                "Космос не терпит чужаков. Клан Грак’Тул обрушился на Элизиум-Прайм: проспекты стали полями боя, и будущее нового дома решается здесь.",
+                "Тактические расчёты гвардейцев сталкиваются с неудержимой волной противника. Объединитесь и вступите в битву за планету.",
+              ],
+              kind: "game",
+              source: 19,
+            },
+            {
+              title: "Party Games",
+              category: "Детские и семейные",
+              image: "game-1",
+              genre: "Мини-игры · детские",
+              description: [
+                "Сборник из пяти казуальных мини-игр, разработанных специально для детей. Простые механики, необычные карты и разнообразный игровой процесс.",
+                "Хороший выбор для семейного отдыха и дня рождения: можно пробовать разные задания и находить любимые.",
+              ],
+              kind: "game",
+              source: 20,
+            },
+            {
+              title: "Portal Zombie",
+              category: "Хорроры",
+              image: "game-2",
+              genre: "Шутер · хоррор",
+              description: [
+                "Кооперативный PVE-хоррор от первого лица. Старый заброшенный особняк атакуют орды зомби. Три этажа, таинственные картины, следы мистической магии и напряжение на каждом уровне.",
+                "Выбирайте оружие от пистолета до автоматического гранатомёта. После волн открываются более мощные варианты. Отражайте атаки командой и сразитесь с боссом.",
+              ],
+              kind: "game",
+              source: 21,
+            },
+            {
+              title: "Portal Arcade",
+              category: "Детские и семейные",
+              image: "game-3",
+              genre: "Шутер · детский",
+              description: [
+                "Командный VR-шутер со свободным перемещением. Цель — победить соперников на ярких красочных локациях, выбирая необычные образы персонажей.",
+                "Пять карт: Египет, Средневековье, пиратский корабль и киберпанк-миры. Игроки перемещаются своими ногами по открытому пространству арены.",
+              ],
+              kind: "game",
+              source: 22,
+            },
+            {
+              title: "Portal Strike",
+              category: "Шутеры",
+              image: "game-4",
+              genre: "Шутер · экшен",
+              description: [
+                "Динамичный командный шутер, напоминающий лазертаг с тактическими элементами. Разделитесь на команды или играйте каждый за себя.",
+                "Разнообразное оружие и гранаты, реалистичный звук и статистика после матча. До10 игроков; возможность записи игры уточняйте при бронировании.",
+              ],
+              kind: "game",
+              source: 23,
+            },
+            {
+              title: "Portal Mafia",
+              category: "Шутеры",
+              image: "game-5",
+              genre: "Шутер · экшен",
+              description: [
+                "Тактический шутер от первого лица в стилистике Америки50-х. Полиция и мафия встречаются на двух детализированных картах: «Город» и «Казино».",
+                "20 видов оружия, включая гранаты, до10 участников и12 персонажей с разной внешностью. После раунда доступна статистика для разбора тактики.",
+              ],
+              kind: "game",
+              source: 24,
+            },
+            {
+              title: "Magic animals",
+              category: "Приключения",
+              image: "game-6",
+              genre: "Аниме · экшен",
+              description: [
+                "Целая вселенная с пейзажами, зверятами-тануки и собственной легендой. Развивайте ловкость и сноровку, ловите проворных существ и исследуйте мир.",
+                "Отбивайтесь от врагов, ловите тануки и спасайте вселенную. Простор для приключений и веселой командной игры.",
+              ],
+              kind: "game",
+              source: 25,
+            },
+            {
+              title: "Military Station",
+              category: "Шутеры",
+              image: "game-7",
+              genre: "Гиперреалистичный шутер",
+              description: [
+                "Знакомые тактические сражения в виртуальной реальности: здесь вы сами оказываетесь на поле боя, а не наблюдаете за героем на экране.",
+                "Детальная физика, реалистичная графика, звуковые и визуальные эффекты, командные испытания. Подойдёт тем, кто ищет более напряжённый игровой опыт.",
+              ],
+              kind: "game",
+              source: 26,
+            },
+            {
+              title: "Family Game",
+              category: "Детские и семейные",
+              image: "game-8",
+              genre: "Мини-игры · семейное",
+              description: [
+                "Набор мини-игр для всей семьи, который понравится новичкам и уверенным игрокам. Каждый может найти задание по душе.",
+                "Семейный вечер, день рождения или тимбилдинг с коллегами — в этой коллекции легко менять настроение и пробовать новое.",
+              ],
+              kind: "game",
+              source: 27,
+            },
+            {
+              title: "Поместье зла",
+              category: "Квесты",
+              image: "quest-0",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Заброшенное поместье хранит мрачные тайны. Исследуйте тёмные комнаты и раскройте историю, от которой мурашки по коже.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Машина времени",
+              category: "Квесты",
+              image: "quest-1",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Путешествуйте сквозь эпохи и станьте свидетелем великих событий прошлого. Исправьте ход истории и не дайте времени сломаться навсегда.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Храм Атлантиды",
+              category: "Квесты",
+              image: "quest-2",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Погрузитесь в глубины океана и найдите древний храм, скрытый от мира тысячу лет. Тайны Атлантиды ждут исследователей.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Дикий Запад",
+              category: "Квесты",
+              image: "quest-3",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Поезд с ценным грузом под угрозой нападения. Объединитесь с командой и остановите бандитов, пока не стало слишком поздно.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Проклятие пиратов",
+              category: "Квесты",
+              image: "quest-4",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Отправляйтесь на затерянный остров в поисках несметных сокровищ. Осторожно: древнее проклятие не любит незваных гостей.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "День дракона",
+              category: "Квесты",
+              image: "quest-5",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Древнее зло пробудилось. Соберите магические артефакты и сразитесь с драконом в эпической битве за будущее целого королевства.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Космическая станция",
+              category: "Квесты",
+              image: "quest-6",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Станция «Венера-2» молчит после столкновения с неизвестным объектом. Спасите экипаж и предотвратите катастрофу вселенского масштаба.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Самурай",
+              category: "Квесты",
+              image: "quest-7",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Станьте самураем и пройдите путь чести в Японии эпохи сёгунов. Испытания, сражения и выбор, который определит вашу судьбу.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Пропавшие",
+              category: "Квесты",
+              image: "quest-8",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Ваша задача — найти пропавшую кошку. На пути ждут неожиданные испытания и секретные локации.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+            {
+              title: "Психбольница",
+              category: "Квесты",
+              image: "quest-9",
+              genre: "VR-квест · 2–4 человека",
+              description: [
+                "Путешествие по психбольнице с полным погружением в жуткие и мистические ситуации. Не для слабонервных.",
+                "Один час приключения. Ищите предметы, разгадывайте загадки и действуйте сообща. Возрастную рекомендацию для выбранного сюжета уточните при записи.",
+              ],
+              kind: "quest",
+              source: 8,
+            },
+          ],
+          reviews: [
+            [
+              "Ирина Вострикова",
+              "Очень атмосферное место, красивый ремонт, сотрудники на высоте. Благодарю за прекрасный день рождения ❤️",
+            ],
+            [
+              "Екатерина К",
+              "Праздновали здесь день рождения сына! Хочется отметить чистоту и уют в клубе: администраторы следят за порядком, везде очень аккуратно, а зона для чаепития комфортная и приятная. Персонал приветливый и отзывчивый! Ребята-инструкторы моментально реагировали на любые просьбы детей, помогали разобраться с оборудованием и создали очень теплую, дружескую атмосферу. Спасибо за наш идеальный праздник!",
+            ],
+            [
+              "Ирина Ирина",
+              "Отмечали день рождения в VR‑клубе — и это был лучший выбор! Инструктаж понятный, персонал приветливый и всё подробно объяснили. Отличная лаунж зона с демонстрацией игры!",
+            ],
+            [
+              "Анастасия Ермоленко",
+              "Спасибо большое за мероприятие, всё очень понравилось, дети довольны🔥👍🏼 Красивое пространство, очень вежливые администраторы, всё круто!",
+            ],
+            [
+              "Юлия Печкина",
+              "Если не знаете как интересно и современно отпраздновать день рождения ребёнка, то вам сюда!!!! Есть все для праздничного застолья и отличного времяпровождения! Спасибо вам за незабываемый праздник!!!!",
+            ],
+            [
+              "Алексей Алмазов",
+              "Проводили детский день рождения. Огромное спасибо за праздник. Интересно было и детям и взрослым. С удовольствием поиграли, весело провели время в ландж-зоне. Вернемся к вам еще раз.",
+            ],
+            [
+              "Анна Лазарева",
+              "Побывали сегодня на игре небольшой семейной компанией) Очень классно поиграли, очки хорошие, локации яркие интересные, парни молодцы все подробно объяснили и во время игры были рядом. Отдельное спасибо за подарок имениннице) Всё остались довольны)",
+            ],
+            [
+              "Вика",
+              "были вчетвером на квесте (разные есть, выбор достаточно большой), было сложновато, но очень интересно. Шлема удобные и видно все прекрасно. Мы все в восторге😁",
+            ],
+            [
+              "Иван Матреницкий",
+              "Посетили VR квест на тематику подводного мира, понравилось! Обязательно опробуем и другие квесты.",
+            ],
+            [
+              "Анастасия Иванова",
+              "Шикарное пространство! Справляли день рождения сына! Взрослые играли с удовольствием наравне с ребятишками! 👍 все очень реалистично и эмоционально! 🙈 очень чистенько, новая мебель, есть все необходимое для праздника 👍 очень рекомендую!",
+            ],
+          ],
+        };
+
+        ("use strict");
+        const { catalog, reviews } = window.ARENA_DATA;
+        const burger = document.querySelector(".burger"),
+          nav = document.querySelector("#navigation");
+        function setMenu(open) {
+          nav.classList.toggle("open", open);
+          burger.setAttribute("aria-expanded", String(open));
+          burger.setAttribute(
+            "aria-label",
+            open ? "Закрыть меню" : "Открыть меню",
+          );
+          document.body.classList.toggle("locked", open);
+        }
+        burger.addEventListener("click", () =>
+          setMenu(burger.getAttribute("aria-expanded") !== "true"),
+        );
+        nav
+          .querySelectorAll("a")
+          .forEach((a) => a.addEventListener("click", () => setMenu(false)));
+        matchMedia("(min-width:801px)").addEventListener("change", (e) => {
+          if (e.matches) setMenu(false);
+        });
+        document.addEventListener("keydown", (e) => {
+          if (burger.getAttribute("aria-expanded") !== "true") return;
+          if (e.key === "Escape") {
+            setMenu(false);
+            burger.focus();
+          }
+          if (e.key === "Tab") {
+            const links = [...nav.querySelectorAll("a"), burger],
+              first = links[0],
+              last = links.at(-1);
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        });
+        function filter(category) {
+          document.querySelectorAll(".filter").forEach((b) => {
+            const selected = b.dataset.filter === category;
+            b.classList.toggle("active", selected);
+            b.setAttribute("aria-pressed", String(selected));
+          });
+          let count = 0;
+          document.querySelectorAll(".game-card").forEach((c) => {
+            c.hidden = category !== "Все" && c.dataset.category !== category;
+            if (!c.hidden) count++;
+          });
+          document.querySelector(".catalog-result").textContent =
+            "Показано: " + count + " из " + catalog.length;
+        }
+        document
+          .querySelectorAll(".filter")
+          .forEach((b) =>
+            b.addEventListener("click", () => filter(b.dataset.filter)),
+          );
+        document
+          .querySelector("[data-quest-filter]")
+          .addEventListener("click", () => {
+            filter("Квесты");
+            document.querySelector(".filters").scrollIntoView({
+              behavior: matchMedia("(prefers-reduced-motion:reduce)").matches
+                ? "instant"
+                : "smooth",
+              block: "start",
+            });
+          });
+        const dialog = document.querySelector("#game-dialog");
+        let lastGame = null;
+        document.querySelectorAll("[data-game]").forEach((b) =>
+          b.addEventListener("click", () => {
+            const g = catalog[Number(b.dataset.game)];
+            lastGame = b;
+            document.querySelector("#dialog-title").textContent = g.title;
+            document.querySelector("#dialog-genre").textContent = g.genre;
+            const image = document.querySelector("#dialog-image");
+            image.src = "assets/" + g.image + ".webp";
+            image.alt = g.title;
+            const desc = document.querySelector("#dialog-description");
+            desc.replaceChildren(
+              ...g.description.map((t) => {
+                const p = document.createElement("p");
+                p.textContent = t.replace(/(\d)([а-яА-Я])/g, "$1 $2");
+                return p;
+              }),
+            );
+            document.querySelector("#dialog-note").textContent =
+              g.kind === "quest"
+                ? "Квест для 2–4 участников. Возрастную рекомендацию уточните у администратора."
+                : "Подберём игру по возрасту и опыту. Наличие сценария уточните при бронировании.";
+            document.querySelector("#dialog-source").href =
+              "assets/sources/source-" + g.source + ".webp";
+            dialog.showModal();
+            dialog.scrollTop = 0;
+            document.body.classList.add("locked");
+            document.querySelector(".modal-close").focus();
+          }),
+        );
+        function closeDialog() {
+          dialog.close();
+        }
+        document
+          .querySelector(".modal-close")
+          .addEventListener("click", closeDialog);
+        dialog.addEventListener("click", (e) => {
+          if (e.target === dialog) {
+            const r = dialog.getBoundingClientRect();
+            if (
+              e.clientX < r.left ||
+              e.clientX > r.right ||
+              e.clientY < r.top ||
+              e.clientY > r.bottom
+            )
+              closeDialog();
+          }
+        });
+        dialog.addEventListener("close", () => {
+          document.body.classList.remove("locked");
+          lastGame?.focus();
+        });
+        const money = (n) => n.toLocaleString("ru-RU") + " ₽";
+        const plans = {
+          hour: {
+            title: "Поиграть на арене",
+            day: 5000,
+            evening: 6000,
+            night: 8000,
+          },
+          mini: {
+            title: "Пакет «Мини»",
+            day: 14000,
+            evening: 16000,
+            hours: 2,
+            vr: 1,
+          },
+          standard: {
+            title: "Пакет «Стандарт»",
+            day: 20000,
+            evening: 22000,
+            hours: 3,
+            vr: 2,
+          },
+          max: {
+            title: "Пакет «Максимум»",
+            day: 30000,
+            evening: 33000,
+            hours: 4,
+            vr: 2,
+          },
+        };
+        let requestText = "";
+        function calculate() {
+          const plan = document.querySelector("input[name=plan]:checked").value;
+          const night = document.querySelector("input[name=time][value=night]");
+          night.disabled = plan !== "hour";
+          if (night.disabled && night.checked)
+            document.querySelector("input[name=time][value=day]").checked =
+              true;
+          const time = document.querySelector("input[name=time]:checked").value;
+          const guests = Number(document.querySelector("#guests").value),
+            hoursEl = document.querySelector("#hours");
+          hoursEl.min = time === "night" ? "2" : "1";
+          if (Number(hoursEl.value) < Number(hoursEl.min))
+            hoursEl.value = hoursEl.min;
+          const hours = Number(hoursEl.value),
+            p = plans[plan];
+          document.querySelector("#hours-wrap").hidden = plan !== "hour";
+          document.querySelector("#addon-fieldset").hidden = plan === "hour";
+          const bear = document.querySelector("#bear"),
+            trampoline = document.querySelector("#trampoline");
+          if (plan === "hour") {
+            bear.checked = false;
+            trampoline.checked = false;
+          }
+          const cost =
+            (plan === "hour" ? p[time] * hours : p[time]) +
+            (bear.checked ? 1000 : 0) +
+            (trampoline.checked ? 5000 : 0);
+          const people = guests + " " + (guests < 5 ? "человека" : "человек");
+          document.querySelector("#guests-value").value = people;
+          document.querySelector("#hours-value").value =
+            hours + " " + (hours === 1 ? "час" : hours < 5 ? "часа" : "часов");
+          document.querySelector("#summary-title").textContent = p.title;
+          const period = {
+            day: "День, 11:00–17:00",
+            evening: "Вечер, 18:00–23:00",
+            night: "Ночь, 00:00–05:00",
+          }[time];
+          const duration =
+            plan === "hour"
+              ? hours + " ч VR"
+              : p.hours +
+                " ч отдыха · " +
+                p.vr +
+                " ч VR" +
+                (plan === "max" ? " · 1 ч батутов" : "");
+          document.querySelector("#summary-detail").textContent =
+            period +
+            " / " +
+            people +
+            " / " +
+            duration +
+            (bear.checked ? " / Белый медведь, 15 мин" : "") +
+            (trampoline.checked ? " / Дополнительно батуты, 30 мин" : "");
+          document.querySelector("#total").textContent = money(cost);
+          document.querySelector("#per-person").textContent =
+            "Около " +
+            money(Math.ceil(cost / guests)) +
+            " на человека при таком составе";
+          requestText =
+            "Здравствуйте! Хотим в VR ARENA ONLINE. " +
+            p.title +
+            ". " +
+            document.querySelector("#summary-detail").textContent +
+            ". Предварительно " +
+            money(cost) +
+            ". Подскажите свободные даты и подтвердите итоговую стоимость и условия бронирования.";
+          document.querySelector("#copy-state").textContent = "";
+          document.querySelector("#copy-fallback").hidden = true;
+          document.querySelector("#admin-chat-fallback").hidden = true;
+        }
+        document
+          .querySelector("#planner-form")
+          .addEventListener("input", calculate);
+        document
+          .querySelector("#planner-form")
+          .addEventListener("change", calculate);
+        document
+          .querySelector("#planner-form")
+          .addEventListener("submit", (e) => e.preventDefault());
+        calculate();
+        document
+          .querySelector("#copy-plan")
+          .addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(requestText);
+              document.querySelector("#copy-state").textContent =
+                "План скопирован. Открываем чат администратора — вставьте сообщение.";
+              window.location.assign("https://ig.me/m/vrarena.irk");
+            } catch {
+              const t = document.querySelector("#copy-fallback");
+              t.value = requestText;
+              t.hidden = false;
+              t.focus();
+              t.select();
+              document.querySelector("#copy-state").textContent =
+                "Скопируйте выделенный текст вручную, затем откройте чат администратора.";
+              document.querySelector("#admin-chat-fallback").hidden = false;
+            }
+          });
+        document.querySelectorAll("[data-price-time]").forEach((b) =>
+          b.addEventListener("click", () => {
+            document.querySelectorAll("[data-price-time]").forEach((x) => {
+              x.classList.toggle("active", x === b);
+              x.setAttribute("aria-pressed", String(x === b));
+            });
+            document
+              .querySelectorAll("[data-price-day]")
+              .forEach(
+                (n) =>
+                  (n.textContent = money(
+                    Number(
+                      b.dataset.priceTime === "day"
+                        ? n.dataset.priceDay
+                        : n.dataset.priceEvening,
+                    ),
+                  )),
+              );
+          }),
+        );
+        document
+          .querySelectorAll("[data-price-day]")
+          .forEach((n) => (n.textContent = money(Number(n.dataset.priceDay))));
+        let reviewIndex = 0;
+        const reviewMedia = matchMedia("(max-width:800px)");
+        function renderReviews() {
+          const size = reviewMedia.matches ? 1 : 3;
+          const list = document.querySelector("#review-list");
+          list.replaceChildren();
+          for (let i = 0; i < size; i++) {
+            const idx = (reviewIndex + i) % reviews.length;
+            const article = document.createElement("article");
+            article.className = "review-card";
+            const mark = document.createElement("span");
+            mark.className = "review-mark";
+            mark.setAttribute("aria-hidden", "true");
+            mark.textContent = "“";
+            const quote = document.createElement("blockquote");
+            quote.textContent = reviews[idx][1];
+            const author = document.createElement("p");
+            author.className = "review-author";
+            author.textContent = reviews[idx][0];
+            const source = document.createElement("small");
+            source.textContent = "Отзыв гостя в 2ГИС";
+            article.append(mark, quote, author, source);
+            list.append(article);
+          }
+          const indices = Array.from(
+            { length: size },
+            (_, i) => ((reviewIndex + i) % 10) + 1,
+          );
+          document.querySelector("#review-counter").textContent =
+            indices.join(", ") + " / 10";
+        }
+        document.querySelector("#review-prev").addEventListener("click", () => {
+          reviewIndex = (reviewIndex - 1 + 10) % 10;
+          renderReviews();
+        });
+        document.querySelector("#review-next").addEventListener("click", () => {
+          reviewIndex = (reviewIndex + 1) % 10;
+          renderReviews();
+        });
+        reviewMedia.addEventListener("change", renderReviews);
+        renderReviews();
+        let swipe = 0;
+        const reviewList = document.querySelector("#review-list");
+        reviewList.addEventListener(
+          "touchstart",
+          (e) => (swipe = e.changedTouches[0].clientX),
+          { passive: true },
+        );
+        reviewList.addEventListener(
+          "touchend",
+          (e) => {
+            const dx = e.changedTouches[0].clientX - swipe;
+            if (Math.abs(dx) > 60) {
+              reviewIndex = (reviewIndex + (dx < 0 ? 1 : 9)) % 10;
+              renderReviews();
+            }
+          },
+          { passive: true },
+        );
+        const frame = document.querySelector(".video-frame"),
+          video = frame.querySelector("video"),
+          play = frame.querySelector(".play-video"),
+          pause = document.querySelector("#video-pause"),
+          seek = document.querySelector("#video-seek");
+        async function startVideo() {
+          try {
+            await video.play();
+            document.querySelector("#video-error").textContent = "";
+          } catch {
+            document.querySelector("#video-error").textContent =
+              "Видео не запустилось. Попробуйте ещё раз.";
+          }
+        }
+        play.addEventListener("click", startVideo);
+        pause.addEventListener("click", () =>
+          video.paused ? startVideo() : video.pause(),
+        );
+        video.addEventListener("play", () => {
+          frame.classList.add("playing", "started");
+          pause.textContent = "Ⅱ";
+          pause.setAttribute("aria-label", "Пауза");
+        });
+        video.addEventListener("pause", () => {
+          frame.classList.remove("playing");
+          pause.textContent = "▶";
+          pause.setAttribute("aria-label", "Продолжить");
+        });
+        video.addEventListener("ended", () => {
+          frame.classList.remove("playing");
+          video.currentTime = 0;
+        });
+        video.addEventListener("timeupdate", () => {
+          seek.value = video.duration
+            ? (100 * video.currentTime) / video.duration
+            : 0;
+        });
+        seek.addEventListener("input", () => {
+          if (Number.isFinite(video.duration))
+            video.currentTime = (Number(seek.value) * video.duration) / 100;
+        });
+        document
+          .querySelector("#video-sound")
+          .addEventListener("click", (e) => {
+            video.muted = !video.muted;
+            e.target.textContent = video.muted ? "Без звука" : "Звук";
+            e.target.setAttribute(
+              "aria-label",
+              video.muted ? "Включить звук" : "Выключить звук",
+            );
+          });
+        document
+          .querySelector("#video-full")
+          .addEventListener("click", async () => {
+            try {
+              if (frame.requestFullscreen) await frame.requestFullscreen();
+              else if (video.webkitEnterFullscreen)
+                video.webkitEnterFullscreen();
+            } catch {
+              document.querySelector("#video-error").textContent =
+                "Полноэкранный режим недоступен в этом браузере.";
+            }
+          });
+        const reduced = matchMedia("(prefers-reduced-motion:reduce)").matches;
+        if (window.gsap && !reduced) {
+          const h = document.querySelector("h1");
+          const lines = [...h.childNodes];
+          for (const node of lines) {
+            if (node.nodeType === 3 && node.textContent.trim()) {
+              const span = document.createElement("span");
+              span.className = "hero-line";
+              span.setAttribute("aria-label", node.textContent);
+              [...node.textContent].forEach((ch) => {
+                const c = document.createElement("span");
+                c.textContent = ch;
+                c.style.display = "inline-block";
+                c.style.whiteSpace = "pre";
+                c.setAttribute("aria-hidden", "true");
+                c.className = "letter";
+                span.append(c);
+              });
+              node.replaceWith(span);
+            }
+          }
+          gsap.from(".hero-line .letter", {
+            y: 24,
+            opacity: 0.25,
+            stagger: 0.025,
+            duration: 0.7,
+            ease: "power3.out",
+          });
+          gsap.from(".hero-intro", {
+            y: 18,
+            opacity: 0.4,
+            duration: 0.8,
+            delay: 0.3,
+            ease: "power3.out",
+          });
+          if (window.ScrollTrigger) {
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.utils.toArray("section:not(.hero) h2").forEach((el) =>
+              gsap.from(el, {
+                y: 20,
+                opacity: 0.4,
+                duration: 0.7,
+                ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 92%", once: true },
+              }),
+            );
+            gsap.to(".hero-image img", {
+              y: 65,
+              ease: "none",
+              scrollTrigger: {
+                trigger: ".hero",
+                start: "top top",
+                end: "bottom top",
+                scrub: true,
+              },
+            });
+          }
+        }
+        if (matchMedia("(pointer:fine)").matches && !reduced) {
+          const ring = document.querySelector(".pointer-ring");
+          document.addEventListener("pointermove", (e) => {
+            ring.style.transform =
+              "translate(" + e.clientX + "px," + e.clientY + "px)";
+            ring.classList.toggle("over", !!e.target.closest("a,button"));
+          });
+          const magnetic = document.querySelector(".hero-actions .btn");
+          magnetic.addEventListener("pointermove", (e) => {
+            const r = magnetic.getBoundingClientRect();
+            magnetic.style.transform =
+              "translate(" +
+              (e.clientX - r.left - r.width / 2) * 0.08 +
+              "px," +
+              (e.clientY - r.top - r.height / 2) * 0.1 +
+              "px)";
+          });
+          magnetic.addEventListener(
+            "pointerleave",
+            () => (magnetic.style.transform = ""),
+          );
+        }
+
+        document.querySelectorAll("[data-plan]").forEach((a) =>
+          a.addEventListener("click", () => {
+            document.querySelector(
+              'input[name="plan"][value="' + a.dataset.plan + '"]',
+            ).checked = true;
+            const selected = document.querySelector("[data-price-time].active");
+            if (selected)
+              document.querySelector(
+                'input[name="time"][value="' +
+                  selected.dataset.priceTime +
+                  '"]',
+              ).checked = true;
+            calculate();
+          }),
+        );
+      });
+    </script>
+  </body>
+</html>

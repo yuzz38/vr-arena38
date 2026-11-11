@@ -1,0 +1,12 @@
+{
+  "picked": "standard",
+  "standard": "22 000 ₽",
+  "fallback": true,
+  "cleared": true,
+  "video": {
+    "playing": true,
+    "currentTime": 0.751984,
+    "duration": 55.966667,
+    "controls": false
+  }
+}
